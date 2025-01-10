@@ -2,7 +2,8 @@ package variables.IntroduccionALasVariables;
 
 public class Ejercicios {
     public static void main(String[] args) {
-        ejercicio7();
+
+
     }
 
     public static void ejercicio1(){
@@ -61,7 +62,17 @@ public class Ejercicios {
     }
 
     public static void ejercicio8(){
+        /* 8. Ámbito de variables: Declara una variable dentro de un bloque
+        if e intenta acceder a ella fuera del bloque. ¿Qué ocurre?*/
 
+        if (true){
+            int valorIf = 5;
+        }
+        //System.out.println(valorIf); // Dará un error, pues la variable no funciona fuera
+        // del bloque.
     }
+
+    /* Ejercicio 9 está separado en dos clases*/
+
 
 }
