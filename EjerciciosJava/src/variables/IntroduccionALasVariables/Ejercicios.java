@@ -1,9 +1,19 @@
 package variables.IntroduccionALasVariables;
 
+import java.util.Scanner;
+
 public class Ejercicios {
     public static void main(String[] args) {
+        ejercicio10 persona1 = new ejercicio10();
+        ejercicio10 persona2 = new ejercicio10();
 
+        persona1.nombre = "Rodolfo";
+        persona1.edad = 24;
+        persona2.nombre = "Axel";
+        persona2.edad = 20;
 
+        System.out.println(persona1.nombre);
+        System.out.println("Nombre: " + persona2.nombre + ", Edad: " + persona2.edad);
     }
 
     public static void ejercicio1(){
@@ -31,7 +41,7 @@ public class Ejercicios {
         /* 4. Constantes: Declara una constante de tipo int llamada DIAS_SEMANA
         con el valor 7.*/
 
-        int DIAS_SEMANA = 7;
+        final int DIAS_SEMANA = 7;
     }
 
     public static void ejercicio5(){
@@ -65,7 +75,7 @@ public class Ejercicios {
         /* 8. Ámbito de variables: Declara una variable dentro de un bloque
         if e intenta acceder a ella fuera del bloque. ¿Qué ocurre?*/
 
-        if (true){
+        if (true) {
             int valorIf = 5;
         }
         //System.out.println(valorIf); // Dará un error, pues la variable no funciona fuera
@@ -74,5 +84,11 @@ public class Ejercicios {
 
     /* Ejercicio 9 está separado en dos clases*/
 
+    static class ejercicio10{
+        /* 10. Variables de instancia: Crea una clase Persona con atributos como nombre y edad.
+        *  Crea varios objetos de esta clase y asigna diferentes valores a sus atributos. */
 
+        String nombre;
+        int edad;
+    }
 }
